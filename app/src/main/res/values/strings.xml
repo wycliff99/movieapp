@@ -1,29 +1,56 @@
 <resources>
-    <string name="app_name">MovieRater</string>
+    <!--Titles on the top of the App-->
+    <string name="app_name">Movie Rates</string>
+    <string name="title_Main">Movie Rating</string>
+    <string name="title_Add">Add Movie</string>
+    <string name="title_Overview">Overview</string>
+    <string name="title_Rating">What\'s Your Rating?</string>
 
-    <!--Title & Description-->
-    <string name="Movie_Name">Name</string>
-    <string name="Name_Hint">Enter the title of the movie</string>
-    <string name="Desc">Movie Description</string>
-    <string name="Desc_Hint">Enter a short description of the movie</string>
+    <!--Strings for activity_main-->
+    <string name="tvAddMovie">You have not added a movie \nLong Press me to add a movie</string>
 
-    <!--Radios-->
-    <string name="Language">Language</string>
-    <string name="Language_English">English</string>
-    <string name="Language_Chinese">Chinese</string>
-    <string name="Language_Malay">Malay</string>
-    <string name="Language_Tamil">Tamil</string>
+    <!--strings for Menu in addmovie-->
+    <string name="mitx_Add">Add</string>
+    <string name="mitx_Clear">Clear Entries</string>
 
-    <!--Release Date-->
-    <string name="Release_Date">Release Date</string>
-    <string name="Release_Hint">Enter Release date</string>
+    <!--strings for addmovie_layout-->
+    <string name="tvName">Name:</string>
+    <string name="tvDescription">Description:</string>
+    <string name="tvLangauge">Langauge:</string>
+    <string name="tvReleaseDate">Release Date:</string>
 
-    <!--Checkbox-->
-    <string name="Hidden_Checkbox"></string>
-    <string name="Suitable_Nonsuitable">Not suitable for all audience</string>
-    <string name="Violence">Violence</string>
-    <string name="Strong_Language">Language Used</string>
+    <!--strings for addmovie_layout(edit text hint)-->
+    <string name="et_Name">Enter movie title</string>
+    <string name="et_Description">Enter Description about the movie</string>
 
-    <!--Button-->
-    <string name="Add_Movie">Add Movie</string>
+    <!--strings for radio button in addmovie_layout-->
+    <string name="rbtnEnglish_Text">English</string>
+    <string name="rbtnChinese_Text">Chinese</string>
+    <string name="rbtnMalay_Text">Malay</string>
+    <string name="rbtnTamil_Text">Tamil</string>
+
+    <!--string for date in addmovie layout-->
+    <string name="et_Date">Enter Release Date</string>
+
+    <!--strings for checkbox in addmovie_layout-->
+    <string name="chckNot_Text">Not suitable for all audience</string>
+    <string name="chckViolence_Text">Violence</string>
+    <string name="chckLangauge_Text">Langauge Used</string>
+
+    <!---->
+
+    <!--
+    <string name="btnAdd_text">Add Movie</string>
+    <string name="btnDetail_text">Rate</string>
+    <string name="mitxRatingSubmit">Submit</string>
+    -->
+
+    <string name="tvTitle">Title</string>
+    <string name="tvOverview">Overview</string>
+    <string name="tvOverviewReview">Review</string>
+    <string name="tvOverviewReviewText">No Reviews yet. \nLong Press here to add a review</string>
+    <string name="tvUnder13">Suitable for children below 13:</string>
+
+    <string name="tvRating">Enter your review for the movie:  </string>
+    <string name="et_Share">Share your view on the show</string>
 </resources>
