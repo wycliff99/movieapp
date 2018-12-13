@@ -1,6 +1,5 @@
 package e170998g.nyp.movierater
 
-import android.content.ClipDescription
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -12,9 +11,8 @@ import android.widget.RadioButton
 import android.widget.RadioGroup
 import android.widget.Toast
 import kotlinx.android.synthetic.main.addmovie_layout.*
-import org.intellij.lang.annotations.Language
 
-class AddMovieActivity : AppCompatActivity() {
+class AddingMovieActivity : AppCompatActivity() {
 
     var under13: String = "Yes"
     var mLanguage = ""
@@ -25,7 +23,7 @@ class AddMovieActivity : AppCompatActivity() {
 
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
-        LLNot.visibility = View.INVISIBLE
+        LLNotsuitable.visibility = View.INVISIBLE
 
         rbtngbLangauge.setOnCheckedChangeListener(
             RadioGroup.OnCheckedChangeListener { group, checkId ->
@@ -36,18 +34,18 @@ class AddMovieActivity : AppCompatActivity() {
 
     fun onChkbxNotClick(v: View) {
 
-        val checked: Boolean = chkbxNot.isChecked()
+        val checked: Boolean = chkbxNotsuitable.isChecked()
 
         when (checked) {
             true -> {
                 under13 = "No"
-                LLNot.visibility = View.VISIBLE
+                LLNotsuitable.visibility = View.VISIBLE
             }
             else -> {
                 under13 = "Yes"
                 chkbxViolence.isChecked = false
                 chkbxLangauge.isChecked = false
-                LLNot.visibility = View.INVISIBLE
+                LLNotsuitable.visibility = View.INVISIBLE
             }
         }
     }
@@ -145,7 +143,7 @@ class AddMovieActivity : AppCompatActivity() {
 
 
     fun submitToNext(mvName: String, mvDescription: String, mvLanguage: String, mvRelease: String, mvUnder13: String) {
-        var intent = Intent(this@AddMovieActivity, OverviewActivity::class.java)
+        var intent = Intent(this@AddingMovieActivity, OverviewActivity::class.java)
 
         intent.putExtra("mName",mvName)
         intent.putExtra("mDescription",mvDescription)

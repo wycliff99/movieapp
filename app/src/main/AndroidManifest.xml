@@ -9,6 +9,8 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+
+        <!--Main page-->
         <activity
                 android:name=".MainActivity"
                 android:screenOrientation="portrait">
@@ -18,16 +20,22 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <!--adding movie page,-->
         <activity
-                android:name=".AddMovieActivity"
+                android:name=".AddingMovieActivity"
                 android:label="@string/title_Add"
                 android:screenOrientation="portrait">
         </activity>
+
+        <!--overview of movie page-->
         <activity
                 android:name=".OverviewActivity"
                 android:label="@string/title_Overview"
                 android:screenOrientation="portrait">
         </activity>
+
+        <!--Rating movie page-->
         <activity
                 android:name=".UserRatingActivity"
                 android:label="@string/title_Rating"

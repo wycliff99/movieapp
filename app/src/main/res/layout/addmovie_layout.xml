@@ -6,8 +6,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".AddMovieActivity">
+        tools:context=".AddingMovieActivity">
 
+    <!--Name of movie-->
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -19,6 +20,7 @@
             android:layout_height="wrap_content"
             android:inputType="text"/>
 
+    <!--Description of movies-->
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -30,10 +32,13 @@
             android:layout_height="wrap_content"
             android:inputType="textMultiLine"/>
 
+    <!--language of movie-->
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/tvLangauge"/>
+
+    <!--Radio button group for language-->
     <RadioGroup
             android:orientation="horizontal"
             android:layout_width="wrap_content"
@@ -61,6 +66,8 @@
                 android:text="@string/rbtnTamil_Text"/>
     </RadioGroup>
 
+
+    <!--Release date of movie-->
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -72,14 +79,18 @@
             android:layout_height="wrap_content"
             android:inputType="date"/>
 
+
+    <!--Check box for suitability-->
     <CheckBox
-            android:id="@+id/chkbxNot"
+            android:id="@+id/chkbxNotsuitable"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/chckNot_Text"
+            android:text="@string/chckNotsuitable_Text"
             android:onClick="onChkbxNotClick"/>
+
+
     <LinearLayout
-            android:id="@+id/LLNot"
+            android:id="@+id/LLNotsuitable"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:weightSum="1"

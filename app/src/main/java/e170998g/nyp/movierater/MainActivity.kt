@@ -14,24 +14,24 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        registerForContextMenu(tvAdd)
+        registerForContextMenu(tvAddmovie)
     }
 
     override fun onCreateContextMenu(menu: ContextMenu?, v: View?, menuInfo: ContextMenu.ContextMenuInfo?) {
         super.onCreateContextMenu(menu, v, menuInfo)
 
-        if (v?.id == R.id.tvAdd)
+        if (v?.id == R.id.tvAddmovie)
         {
-            menu?.add(1,100,1,"Add Movie")
+            menu?.add(1,123,1,"Add Movie")
         }
     }
 
     override fun onContextItemSelected(item: MenuItem?): Boolean {
-        val intent = Intent(this, AddMovieActivity::class.java)
+        val intent = Intent(this, AddingMovieActivity::class.java)
         //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK )
 
 
-        if (item?.itemId == 100) {
+        if (item?.itemId == 123) {
             startActivity(intent)
         }
 

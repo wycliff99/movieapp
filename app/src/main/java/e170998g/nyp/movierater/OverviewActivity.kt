@@ -38,7 +38,7 @@ class OverviewActivity : AppCompatActivity() {
 
         if (v?.id == R.id.tvReview)
         {
-            menu?.add(1,200,1,"Add Review")
+            menu?.add(1,999,1,"Add Review")
         }
     }
 
@@ -51,7 +51,7 @@ class OverviewActivity : AppCompatActivity() {
         intent.putExtra("mRelease", tvOverviewReleaseDate.text)
         intent.putExtra("mUnder13", tvUnder13.text)
 
-        if (item?.itemId == 200) {
+        if (item?.itemId == 999) {
 
 
 

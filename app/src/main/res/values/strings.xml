@@ -10,8 +10,10 @@
     <string name="tvAddMovie">You have not added a movie \nLong Press me to add a movie</string>
 
     <!--strings for Menu in addmovie-->
-    <string name="mitx_Add">Add</string>
+
+
     <string name="mitx_Clear">Clear Entries</string>
+    <string name="mitx_Add">Add</string>
 
     <!--strings for addmovie_layout-->
     <string name="tvName">Name:</string>
@@ -33,17 +35,19 @@
     <string name="et_Date">Enter Release Date</string>
 
     <!--strings for checkbox in addmovie_layout-->
-    <string name="chckNot_Text">Not suitable for all audience</string>
-    <string name="chckViolence_Text">Violence</string>
+    <string name="chckNotsuitable_Text">Not suitable for all audience</string>
     <string name="chckLangauge_Text">Langauge Used</string>
+    <string name="chckViolence_Text">Violence</string>
+
 
     <!---->
 
     <!--
     <string name="btnAdd_text">Add Movie</string>
     <string name="btnDetail_text">Rate</string>
-    <string name="mitxRatingSubmit">Submit</string>
     -->
+    <string name="mitxRatingSubmit">Submit</string>
+
 
     <string name="tvTitle">Title</string>
     <string name="tvOverview">Overview</string>
